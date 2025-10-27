@@ -1,0 +1,6 @@
+{
+  "printerId": "PRN-001",
+  "model": "Zebra-ZT410",
+  "site": "Lahore-HQ",
+  "metrics": { "status": "OK", "tempC": 42, "paper": "OK", "errors": 0, "jobsPrinted": 3 }
+}
