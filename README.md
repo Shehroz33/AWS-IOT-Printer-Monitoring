@@ -1,5 +1,8 @@
 # AWS IoT Printer Monitoring
 
+![CI](https://github.com/Shehroz33/AWS-IOT-Printer-Monitoring/actions/workflows/ci.yml/badge.svg)
+
+
 Real-time **IoT printer monitoring** on AWS using **IoT Core → Lambda → DynamoDB → (optional) API → React Dashboard**.  
 Includes environment templates and CI workflow to make the repo look production-ready.
 
