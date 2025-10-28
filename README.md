@@ -34,7 +34,7 @@ flowchart LR
 ## 📸 Screenshots
 
 **IoT Connection**
-![Connection Success](./docs/IOTCONNECTION.png)
+![Connection Success](./docs/IOTConnection.png)
 
 
 
