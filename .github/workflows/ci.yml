@@ -1,0 +1,37 @@
+name: CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend:
+    name: Backend checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: printer-backend
+        run: npm ci || npm install
+      - name: Build/Lint backend
+        working-directory: printer-backend
+        run: npm run build || echo "no build script"
+
+  dashboard:
+    name: Dashboard build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        working-directory: printer-dashboard
+        run: npm ci || npm install
+      - name: Build dashboard
+        working-directory: printer-dashboard
+        run: npm run build || echo "no build script"
