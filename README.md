@@ -36,8 +36,14 @@ flowchart LR
 
 ![Connection Success](./docs/IOTCONNECTION.png)
 
+
+
+
 **AWS CloudFormation**
 ![Cloud Formation](./docs\CLOUD-FORMATION.png)
+
+
+
 
 **DynamoDB**
 ![DynamoDB](./docs/DynamoDB.png)
