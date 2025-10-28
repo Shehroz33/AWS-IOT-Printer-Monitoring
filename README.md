@@ -22,14 +22,19 @@ Includes environment templates and CI workflow to make the repo look production-
 
 ![1737527088748](https://github.com/user-attachments/assets/7e28ca09-0bf2-44e0-bd0c-4b4a1fd89e51)
 
+
+## 🗺️ Architecture (High Level)
+
+```mermaid
 flowchart LR
-  A[Printer Device / Simulator] --> B[(AWS IoT Core MQTT)]
-  B --> C[AWS IoT Rule]
-  C --> D[Lambda - Ingest/Validate]
-  D --> E[(DynamoDB: printer_metrics)]
-  E --> F[API Gateway (optional)]
-  F --> G[React Dashboard]
-  D --> H[CloudWatch Logs/Alarms]
+    A[Printer Device / Simulator] --> B[(AWS IoT Core MQTT)]
+    B --> C[AWS IoT Rule]
+    C --> D[Lambda - Ingest / Validate]
+    D --> E[(DynamoDB: printer_metrics)]
+    E --> F[API Gateway (optional)]
+    F --> G[React Dashboard]
+    D --> H[CloudWatch Logs / Alarms]
+
 
 ## 📸 Screenshots
 
