@@ -32,15 +32,15 @@ flowchart LR
   D --> H[CloudWatch Logs/Alarms]
 
 ## 📸 Screenshots
-**IoT Connection**
 
+**IoT Connection**
 ![Connection Success](./docs/IOTCONNECTION.png)
 
 
 
 
 **AWS CloudFormation**
-![Cloud Formation](./docs\CLOUD-FORMATION.png)
+![Cloud Formation](./docs/CLOUD-FORMATION.png)
 
 
 
