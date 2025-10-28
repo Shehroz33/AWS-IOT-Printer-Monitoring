@@ -6,8 +6,6 @@
 Real-time **IoT printer monitoring** on AWS using **IoT Core → Lambda → DynamoDB → (optional) API → React Dashboard**.  
 Includes environment templates and CI workflow to make the repo look production-ready.
 
-> Inspired by the instructor repo. This is my **documented, refactored** version with a clearer structure and README.
-
 ---
 
 ## ✨ Features
