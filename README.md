@@ -27,18 +27,21 @@ Includes environment templates and CI workflow to make the repo look production-
 
 ```mermaid
 flowchart LR
-    A[Printer Device / Simulator] --> B[(AWS IoT Core MQTT)]
+    A[Printer Device / Simulator] --> B((AWS IoT Core MQTT))
     B --> C[AWS IoT Rule]
-    C --> D[Lambda - Ingest / Validate]
-    D --> E[(DynamoDB: printer_metrics)]
+    C --> D[Lambda Function - Ingest & Validate]
+    D --> E[(DynamoDB Table: printer_metrics)]
     E --> F[API Gateway (optional)]
     F --> G[React Dashboard]
     D --> H[CloudWatch Logs / Alarms]
 
 
-## 📸 Screenshots
 
-**IoT Connection**
+
+
+  ## 📸 Screenshots
+
+ **IoT Connection**
 ![Connection Success](./docs/IOTConnection.png)
 
 
